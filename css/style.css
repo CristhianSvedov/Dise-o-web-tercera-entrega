@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: hsl(30deg, 75%, 63%);
+  z-index: 10000;
+}
+header .naranja {
+  max-width: 1600px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+header .naranja a img {
+  width: 100px;
+}
+header .naranja img {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+header .naranja .header__naranja__logo {
+  display: flex;
+}
+header .naranja .header__naranja__logo .titulo__naranja {
+  display: block;
+  padding-top: 5px;
+  margin-left: 10px;
+}
+header .naranja .header__naranja__logo .titulo__naranja p {
+  font-family: "Bree Serif";
+  font-size: 20px;
+  color: white;
+}
+header .naranja .header__naranja__logo .titulo__naranja p:first-child {
+  font-size: 30px;
+}
+header .naranja .header__naranja__buscar input {
+  width: 300px;
+  padding: 5px;
+}
+@media only screen and (max-width: 1200px) {
+  header .naranja a img {
+    width: 70px;
+    height: auto;
+  }
+  header .naranja img {
+    width: 70px;
+    height: 70px;
+  }
+  header .header__naranja__buscar {
+    display: none;
+  }
+  header #titulo1 {
+    font-size: 25px;
+  }
+  header #titulo2 {
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
