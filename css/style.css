@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
 }
 
 header {
@@ -49,7 +48,113 @@ header .naranja .header__naranja__buscar input {
   width: 300px;
   padding: 5px;
 }
+header .contiene__menu {
+  width: 100%;
+  height: 70px;
+  background-color: hsl(28deg, 1%, 43%);
+  padding: 0px 20px;
+}
+header .contiene__menu #check__menu {
+  display: none;
+}
+header .contiene__menu #label__check {
+  width: 26px;
+  height: 100%;
+  display: none;
+}
+header .contiene__menu .menu__nav {
+  height: 100%;
+}
+header .contiene__menu .menu__nav .menu__nav__ul {
+  height: 100%;
+  display: flex;
+  position: auto;
+}
+header .contiene__menu .menu__nav .menu__nav__ul .menu__nav__ul__li {
+  height: 100%;
+  list-style: none;
+  position: relative;
+}
+header .contiene__menu .menu__nav .menu__nav__ul .menu__nav__ul__li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  color: white;
+  align-items: center;
+  padding: 14px 50px;
+  text-transform: uppercase;
+  font-family: "Bree Serif";
+  font-size: 14px;
+  transition: all 300ms ease;
+  text-decoration: none;
+}
+header .contiene__menu .menu__nav .menu__nav__ul .menu__nav__ul__li a:hover {
+  transform: scale(1.1);
+  background: linear-gradient(to bottom, hsl(30deg, 75%, 63%), #746470);
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+}
+header .contiene__menu .menu__nav .menu__nav__ul .menu__nav__ul__li .nav__elclub {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  top: 90px;
+  left: -5px;
+  padding: 14px 0px;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  transition: all 300ms ease;
+}
+header .contiene__menu .menu__nav .menu__nav__ul .menu__nav__ul__li .nav__elclub .nav__elclub__li {
+  list-style: none;
+}
+header .contiene__menu .menu__nav .menu__nav__ul .menu__nav__ul__li .nav__elclub .nav__elclub__li a {
+  display: block;
+  color: hsl(44deg, 42%, 26%);
+  padding: 6px;
+  padding-left: 14px;
+  margin-top: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: all 300ms ease;
+}
+header .contiene__menu .menu__nav .menu__nav__ul .menu__nav__ul__li .nav__elclub .nav__elclub__li a:hover {
+  background-color: hsl(44deg, 42%, 26%);
+  color: white;
+  transform: scale(1.1);
+  padding-left: 30px;
+  font-size: 14px;
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.5);
+}
+header .contiene__menu .menu__nav .menu__nav__ul .menu__nav__ul__li .nav__elclub::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid white;
+  position: absolute;
+  top: -12px;
+  left: 20px;
+}
+header .contiene__menu .menu__nav .menu__nav__ul .selected {
+  transform: scale(1.1);
+  background-color: hsl(30deg, 88%, 74%);
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.5);
+}
+header .contiene__menu .menu__nav .menu__nav__ul .menu__nav__ul__li:hover .nav__elclub {
+  visibility: visible;
+  opacity: 1;
+  top: 70px;
+}
 @media only screen and (max-width: 1200px) {
+  header {
+    /*ver tema de ubicacion sub menu responsive*/
+  }
   header .naranja a img {
     width: 70px;
     height: auto;
@@ -66,6 +171,66 @@ header .naranja .header__naranja__buscar input {
   }
   header #titulo2 {
     font-size: 15px;
+  }
+  header .menu__nav {
+    width: 100%;
+  }
+  header .menu__nav .menu__nav__ul {
+    flex-direction: column;
+    background-color: hsl(44deg, 42%, 26%);
+    left: 0;
+    top: 158px;
+    width: 100%;
+    height: 350px;
+    margin-top: 10px;
+    transition: all 300ms ease;
+    z-index: 100;
+  }
+  header .menu__nav .menu__nav__ul .menu__nav__ul__li {
+    width: 100%;
+    background-color: hsl(44deg, 42%, 26%);
+  }
+  header .menu__nav .menu__nav__ul .menu__nav__ul__li:hover {
+    transform: scale(1);
+  }
+  header .menu__nav .menu__nav__ul .menu__nav__ul__li:hover .nav__elclub {
+    top: 63px;
+  }
+  header .menu__nav .menu__nav__ul .menu__nav__ul__li .nav__elclub {
+    left: 150px;
+    width: 100%;
+  }
+  header .menu__nav .menu__nav__ul .menu__nav__ul__li:first-child a {
+    background-position: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header {
+    /*ver tema ubicacion sub menu responsive*/
+  }
+  header .contiene__menu #label__check {
+    display: block;
+  }
+  header .contiene__menu .icon__menu {
+    display: flex;
+  }
+  header .contiene__menu #check__menu:checked ~ nav > ul {
+    height: 400px;
+    visibility: visible;
+    opacity: 1;
+  }
+  header .contiene__menu .menu__nav__ul {
+    flex-direction: column;
+    background-color: hsl(44deg, 42%, 26%);
+    position: fixed;
+    left: 0;
+    top: 158px;
+    width: 100%;
+    height: 0;
+    transition: all 300ms ease;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
   }
 }
 
