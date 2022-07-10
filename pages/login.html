@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- Link Bootstrap-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+      <!--Link iconos bootstrap-->
+     <style>
+     @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+     </style>
+ 
+     <!--icono nadvar-->
+     <script src="https://kit.fontawesome.com/b0055d454a.js" crossorigin="anonymous"></script>
+ 
+      <!--Fuente Parrafos-->
+      <style>
+         @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300&display=swap');
+     </style>
+     <!-- font-family: 'Nunito Sans', sans-serif;-->
+ 
+     <style>
+         @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+     </style>
+     <!--font-family: 'Bree Serif', serif;-->
+ 
+     <!--Link css-->
+     <link rel="stylesheet" href="../css/style.css">
+
+    <title>Login</title>
+</head>
+<body>
+    
+     <!-- HEADER -->
+     <header>
+        <!-- Cabecera arriba-->
+        <section class="naranja">
+            <div class="header__naranja__logo">
+                <a href="#">
+                    <img src="../multimedia/imagenes/Escudo_Salto_FC.png" alt="Escudo Salto FC">
+                </a>
+                <div class="titulo__naranja">
+                    <p id="titulo1"><strong>Salto</strong></p>
+                    <p id="titulo2">Futbol Club</p>
+                </div>
+            </div>
+            <div class="header__naranja__buscar">
+                <input type="search" placeholder="¿Que estas buscando?">
+            </div>
+            <div class="header__naranja__sponsors">
+                <img src="../multimedia/imagenes/Sponsors/elrevoltijo1.jpg" alt="Sponsors Salto FC el revoltijo">
+                <img src="../multimedia/imagenes/Sponsors/elite1.jpg" alt="Sponsors Salto FC elite">
+                <img src="../multimedia/imagenes/Sponsors/villaespania1.jpg" alt="Sponsors Salto FC villa españa">
+            </div>
+        </section>
+        <section class="contiene__menu">
+            <input type="checkbox" id="check__menu">
+            <label id="label__check" for="check__menu" for="check__menu">
+                <i class="fa-solid fa-bars icon__menu"></i>
+            </label>                
+            <nav class="menu__nav">
+                <ul class="menu__nav__ul">
+                    <li class="menu__nav__ul__li">
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li class="menu__nav__ul__li">
+                        <a href="registrar.html">Registrar</a>            
+                    </li>
+                    <li class="menu__nav__ul__li selected">
+                        <a href="login.html">Login</a>
+                    </li>
+                    <li class="menu__nav__ul__li">
+                        <a href="elclub.html">El Club</a>
+                        <ul class="nav__elclub">
+                            <li class="nav__elclub__li">
+                                <a href="elclub.html">Historia</a>
+                            </li>
+                            <li class="nav__elclub__li">
+                                <a href="#">Salto Interior</a>
+                            </li>
+                            <li class="nav__elclub__li">
+                                <a href="#">Estadio</a>
+                            </li>
+                            <li class="nav__elclub__li">
+                                <a href="#">Prensa</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__nav__ul__li">
+                        <a href="../index.html#noticia">Noticias</a>
+                    </li>
+                    <li class="menu__nav__ul__li">
+                        <a href="tienda.html">Tienda</a>
+                    </li>
+                    <li class="menu__nav__ul__li">
+                        <a href="pena.html">Peñas</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </section>
+    </header>
+
+    <main class="main">
+        <h1>Login Usuario</h1>
+        <section class="container">
+            <div class="row">
+                <div class="col cs__form1">
+                    <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Correo electronico</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button id="noregistrado" type="submit" class="btn btn-primary">Ingresar</button>
+                      </form>
+                </div>
+            </div>
+        </section> 
+    </main>
+
+<footer>
+    <div class="footer__container">
+        <div class="box__footer">
+            <h2>Redes Sociales</h2>
+            <a href="https://www.instagram.com/saltofcoficial/" target="_blank" class="link">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://es-la.facebook.com/" target="_blank" class="link">
+                <i class="bi bi-facebook"></i>
+      
+            </a>
+            <a href="https://twitter.com/" target="_blank"  class="link">
+              <i class="bi bi-twitter"></i>
+            </a>
+        </div>
+
+        <div class="box__footer" id="visible">
+            <h2>Secciones</h2>
+            <a href="../pages/registrar.html">Registrar</a>
+            <a href="../pages/login.html">Login</a>
+            <a href="../pages/elclub.html">El Club</a>
+            <a href="../index.html#noticia">Noticias</a>
+            <a href="../pages/tienda.html">Tienda</a>
+            <a href="../pages/pena.html">Peña</a>
+            
+        </div>
+        
+        <div class="box__footer">
+            <h2>Sponsors</h2>
+            <a href="#" class="link">
+            <img src="../multimedia/imagenes/Sponsors/elrevoltijo1.jpg" alt="logo el revoltijo">
+            </a>
+            <a href="#" class="link">
+            <img src="../multimedia/imagenes/Sponsors/elite1.jpg" alt="logo elite">
+            </a>
+            <a href="#" class="link">
+            <img src="../multimedia/imagenes/Sponsors/villaespania1.jpg" alt="logo villa espania">
+          </a>
+        </div>
+    </div>
+    
+    <div class="box__copy">
+        <hr>
+        <p>Todos los derechos reservados © 2022</p>
+        <p id="autor">Cristhian Svedov</p>
+    </div>
+</footer>
+
+    <!--Link Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

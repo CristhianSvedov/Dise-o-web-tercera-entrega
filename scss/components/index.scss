@@ -1,0 +1,113 @@
+.main {
+    width: 100%;
+    height: 100%;
+    margin-top: 210px;
+    background-color: nth($colors-pages,2);
+    h1 {
+        padding: 20px;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 800;
+        font-family: nth($fonts,1);
+        color: nth($colors-letras,2);
+    }
+    h2 {
+        padding: 20px;
+        text-align: center;
+        font-size: 35px;
+        font-weight: 600;
+        font-family: nth($fonts,1);
+        color: nth($colors-letras,2);
+    }
+    p {
+        font-family: nth($fonts,2);
+        font-size: 20px;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        h1 {
+            font-size: 30px;
+            margin-top: 480px;
+        }
+        h2 {
+            font-size: 25px;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .cs__img__noticias {
+            img {
+                width: 300px;
+            }
+        }
+        .cs__video__noticia {
+            div {
+                video {
+                    height: 100px;
+                }
+            }
+        }
+    }
+
+    .cs__sec__carousel{
+        width: 100%;
+        height: 100%;
+        img {
+            max-height: 600px;
+            margin-bottom: 30px;
+        }
+        .cs__texto__carousel {
+            h3 {
+                color: nth($colors-letras,2);
+                background-color:nth($colors-pages,2);
+            }
+            p{
+                color: nth($colors-letras,2);
+                background-color:nth($colors-pages,2);
+            }
+        }
+    }
+
+    .cs__img__fixture {
+        background-color: nth($colors-pages,4);
+        color: nth($colors-letras,1);
+        font-family: nth($fonts,1);
+        img {
+            height: 100px;
+            width: 90%;
+        }
+    }
+
+    .cs__img__noticias{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-right: solid hsl(28deg, 1%, 43%);
+        h3 {
+            font-size: 25px;
+            font-weight: 500;
+            font-family: nth($fonts,1);
+            color: nth($colors-letras,2);
+        }
+        img {
+            margin: 20px;
+        }
+    }
+    .cs__video__noticia {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div {
+            video {
+                align-items: center;
+                height: 500px;
+            }
+        }
+        h4 {
+            font-size: 25px;
+            font-weight: 500;
+            font-family: nth($fonts,1);
+            color: nth($colors-letras,2);
+        }
+    }
+}

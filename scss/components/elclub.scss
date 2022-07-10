@@ -1,0 +1,68 @@
+.cs__historia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: solid 2px hsl(28deg, 1%, 43%);
+    margin-bottom: 12px;
+    img {
+        margin: 15px;
+    }
+}
+
+.cs__estadio {
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 2px hsl(28deg, 1%, 43%);
+    text-align: center;
+    padding-bottom: 20px;
+    div {
+        h3 {
+            text-align: center;
+            font-size: 25px;
+            font-weight: 500;
+            font-family: nth($fonts,1);
+            color: nth($colors-letras,2);
+        }
+        p{
+            font-family: nth($fonts,2);
+        }
+        img {
+            margin-bottom: 15px;
+        }
+        #estadioArriba {
+            margin-top: 65px;
+        }
+    }
+}
+
+.cs__plantilla {
+    text-align: center;
+    img {
+        width: 300px;
+    }
+}
+
+.cs__dirigentes {
+    margin-bottom: 50px;
+    #dirigentes1 {
+        margin-top: 65px;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    #estadioArriba {
+        width: 700px;
+    }
+    #estadioAbajo {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .cs__plantilla {
+        font-size: 10px;
+        img {
+            width: 150px;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.cs__usuario {
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-bottom: solid 2px hsl(28deg, 1%, 43%);
+    div{
+        a{
+            img{
+                width: 300px;
+                border-radius: 15%;
+            }
+        }
+    }
+}
+
+.cs__form1{
+    .cs__form2 {
+        align-items: center;
+        justify-items: center;
+        h3 {
+            font-size: 25px;
+            font-weight: 500;
+            font-family: nth($fonts,1);
+            color: nth($colors-letras,2);
+            text-align: center;
+        }
+    }
+}

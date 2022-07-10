@@ -3,7 +3,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: nth($colors,2);
+    background-color: nth($colors-pages,1);
     z-index: 10000;
 
     .naranja {
@@ -35,7 +35,7 @@ header {
                 & p {
                     font-family: nth($fonts,1);
                     font-size: 20px;
-                    color: nth($colors,1);
+                    color: nth($colors-letras,1);
                     &:first-child{
                         font-size: 30px;
                     }
@@ -56,7 +56,7 @@ header {
     .contiene__menu {
         width: 100%;
         height: 70px;
-        background-color: hsl(28deg, 1%, 43%);
+        background-color: nth($colors-pages,4);
         padding: 0px 20px;
         #check__menu {
             display: none;
@@ -68,12 +68,11 @@ header {
         }
         .menu__nav {
             height: 100%;
-
             .menu__nav__ul {
                 height: 100%;
                 display: flex;
                 position: auto;
-
+                
                 .menu__nav__ul__li {
                     height: 100%;
                     list-style: none;
@@ -82,7 +81,7 @@ header {
                         width: 100%;
                         height: 100%;
                         display: flex;
-                        color: nth($colors,1);
+                        color: nth($colors-letras,1);
                         align-items: center;
                         padding: 14px 50px;
                         text-transform: uppercase;
@@ -101,7 +100,7 @@ header {
                         width: 200px;
                         display: flex;
                         flex-direction: column;
-                        background-color: nth($colors,1);
+                        background-color: nth($colors-letras,1);
                         position: absolute;
                         top: 90px;
                         left: -5px;
@@ -115,7 +114,7 @@ header {
                             list-style: none;
                             & a {
                                 display: block;
-                                color: nth($colors,4);
+                                color: nth($colors-letras,2);
                                 padding: 6px;
                                 padding-left: 14px;
                                 margin-top: 10px;
@@ -123,8 +122,8 @@ header {
                                 text-transform: uppercase;
                                 transition: all 300ms ease;
                                 &:hover {
-                                    background-color: nth($colors,4);
-                                    color: nth($colors,1);
+                                    background-color: nth($colors-pages,3);
+                                    color: nth($colors-letras,1);
                                     transform: scale(1.1);
                                     padding-left: 30px;
                                     font-size: 14px;
@@ -147,7 +146,7 @@ header {
                 }
                 .selected {
                     transform: scale(1.1);
-                    background-color: nth($colors,3);
+                    background-color: nth($colors-pages,2);
                     box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.5);
                 }
                 .menu__nav__ul__li:hover .nav__elclub {
@@ -190,7 +189,7 @@ header {
              width: 100%;
              .menu__nav__ul {
                  flex-direction: column;
-                 background-color: hsl(44deg, 42%, 26%);
+                 background-color: nth($colors-pages,3);
                  left: 0;
                  top: 158px;
                  width: 100%;
@@ -200,7 +199,7 @@ header {
                  z-index: 100;
                  .menu__nav__ul__li {
                      width: 100%;
-                     background-color: hsl(44deg, 42%, 26%);
+                     background-color: nth($colors-pages,3);
                      &:hover{
                          transform: scale(1);
                          .nav__elclub {
@@ -239,7 +238,7 @@ header {
 
               .menu__nav__ul {
                 flex-direction: column;
-                background-color: hsl(44deg, 42%, 26%);
+                background-color: nth($colors-pages,3);
                 position: fixed;
                 left: 0;
                 top: 158px;
