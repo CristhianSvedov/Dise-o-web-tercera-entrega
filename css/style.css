@@ -8,6 +8,15 @@ body {
   background-color: hsl(30deg, 88%, 74%);
 }
 
+.main h2 {
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: "Bree Serif";
+  color: hsl(44deg, 42%, 26%);
+}
+
 header {
   width: 100%;
   position: fixed;
@@ -376,16 +385,7 @@ footer .box__copy hr {
 .main h1 {
   padding: 20px;
   text-align: center;
-  font-size: 50px;
   font-weight: 800;
-  font-family: "Bree Serif";
-  color: hsl(44deg, 42%, 26%);
-}
-.main h2 {
-  padding: 20px;
-  text-align: center;
-  font-size: 35px;
-  font-weight: 600;
   font-family: "Bree Serif";
   color: hsl(44deg, 42%, 26%);
 }
@@ -558,7 +558,9 @@ footer .box__copy hr {
 .cs__tienda .cs__img__equipaciones {
   align-items: center;
   justify-content: center;
-  text-align: center;
+  text-align: center; /*align-items: center;
+justify-content: center;
+text-align:center;*/
 }
 .cs__tienda .cs__img__equipaciones img {
   padding: 15px;
@@ -569,6 +571,9 @@ footer .box__copy hr {
   align-items: center;
   justify-content: center;
   text-align: center;
+  /*align-items: center;
+  justify-content: center;
+  text-align: center;*/
 }
 .cs__tienda .cs__img__tarjetas h3 {
   font-size: 25px;

@@ -1,8 +1,9 @@
 .cs__tienda {   
    .cs__img__equipaciones {
-        align-items: center;
+        @include posicion (center,center,center);
+        /*align-items: center;
         justify-content: center;
-        text-align:center;
+        text-align:center;*/
         img {
             padding: 15px;
             border: solid 2px hsl(28deg, 1%, 43%);
@@ -10,9 +11,10 @@
         }
     }
     .cs__img__tarjetas {
-        align-items: center;
+        @include posicion (center,center,center);
+        /*align-items: center;
         justify-content: center;
-        text-align: center;
+        text-align: center;*/
         h3 {
             font-size: 25px;
             font-weight: 500;

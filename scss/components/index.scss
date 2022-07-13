@@ -4,20 +4,15 @@
     margin-top: 210px;
     background-color: nth($colors-pages,2);
     h1 {
-        padding: 20px;
-        text-align: center;
-        font-size: 50px;
-        font-weight: 800;
-        font-family: nth($fonts,1);
-        color: nth($colors-letras,2);
+        padding: map-get($titulo-h1,padi-h1);
+        text-align: map-get($titulo-h1,alim-texto);
+        font-size: map-get($titulo-h1,tamanio-letra);
+        font-weight: map-get($titulo-h1,ancho-h1);
+        font-family: map-get($titulo-h1,fuente-letra);
+        color: map-get($titulo-h1,clolor-letra);
     }
     h2 {
-        padding: 20px;
-        text-align: center;
-        font-size: 35px;
-        font-weight: 600;
-        font-family: nth($fonts,1);
-        color: nth($colors-letras,2);
+        @extend %titulo-h2;
     }
     p {
         font-family: nth($fonts,2);
