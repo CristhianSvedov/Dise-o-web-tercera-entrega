@@ -1,5 +1,4 @@
-# Dise-o-web-tercera-entrega
-# Proyecto-Final-primera-github
+
 <h1 align="center">Hi 👋, I'm Cristhian Svedov</h1>
 <h3 align="center">A passionate frontend developer from Uruguay</h3>
 
