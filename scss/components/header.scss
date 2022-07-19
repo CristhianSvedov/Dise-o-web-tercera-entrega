@@ -56,7 +56,7 @@ header {
     .contiene__menu {
         width: 100%;
         height: 70px;
-        background-color: nth($colors-pages,4);
+        background-color: nth($colors-pages,5);
         padding: 0px 20px;
         #check__menu {
             display: none;
@@ -228,6 +228,7 @@ header {
 
               .icon__menu {
                 display: flex;
+                color: white;
               }
         
               #check__menu:checked ~ nav > ul {

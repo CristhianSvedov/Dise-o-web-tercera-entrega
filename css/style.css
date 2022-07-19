@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: hsl(30deg, 88%, 74%);
+  background: #f6bc48;
 }
 
 .main h2 {
@@ -64,7 +64,7 @@ header .naranja .header__naranja__buscar input {
 header .contiene__menu {
   width: 100%;
   height: 70px;
-  background-color: hsl(28deg, 1%, 43%);
+  background-color: rgb(48, 47, 47);
   padding: 0px 20px;
 }
 header .contiene__menu #check__menu {
@@ -226,6 +226,7 @@ header .contiene__menu .menu__nav .menu__nav__ul .menu__nav__ul__li:hover .nav__
   }
   header .contiene__menu .icon__menu {
     display: flex;
+    color: white;
   }
   header .contiene__menu #check__menu:checked ~ nav > ul {
     height: 400px;
@@ -380,7 +381,8 @@ footer .box__copy hr {
   width: 100%;
   height: 100%;
   margin-top: 210px;
-  background-color: hsl(30deg, 88%, 74%);
+  /*background-color: nth($colors-pages,2);*/
+  background: linear-gradient(80deg, #ecece0, #eea209);
 }
 .main h1 {
   padding: 20px;
@@ -526,7 +528,106 @@ footer .box__copy hr {
 }
 
 .cs__plantilla {
+  padding-top: 80px;
   text-align: center;
+}
+.cs__plantilla .card {
+  position: relative;
+  width: 300px;
+  height: 190px;
+  background: hsl(30deg, 88%, 74%);
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+.cs__plantilla .card:hover {
+  height: 400px;
+}
+.cs__plantilla .card .imgbx {
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  transition: 0.5s;
+}
+.cs__plantilla .card .imgbx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cs__plantilla .card:hover .imgbx {
+  width: 200px;
+  height: 200px;
+}
+.cs__plantilla .card .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.cs__plantilla .card .content .detail {
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  transition: 0.5s;
+  transform: translateY(150px);
+}
+.cs__plantilla .card .content .detail h2 {
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #555;
+  line-height: 1.2em;
+}
+.cs__plantilla .card .content .detail h2 span {
+  font-size: 0.75em;
+  font-weight: 500;
+  opacity: 0.5;
+}
+.cs__plantilla .card .content .detail .data {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.cs__plantilla .card .content .detail .data h3 {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.2em;
+  font-weight: 600;
+}
+.cs__plantilla .card .content .detail .data h3 span {
+  font-size: 0.85em;
+  font-weight: 400;
+  opacity: 0.5;
+}
+.cs__plantilla .card .content .detail .actionBtn {
+  display: flex;
+  justify-content: center;
+}
+.cs__plantilla .card .content .detail .actionBtn button {
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  font-weight: 500;
+  background: rgb(48, 47, 47);
+  color: #fff;
+  cursor: pointer;
+}
+.cs__plantilla .card:hover .content .detail {
+  transform: translateY(0px);
 }
 .cs__plantilla img {
   width: 300px;
@@ -545,6 +646,10 @@ footer .box__copy hr {
   }
   #estadioAbajo {
     width: 400px;
+  }
+  .cs__plantilla .card {
+    width: 200px;
+    height: 110px;
   }
 }
 @media only screen and (max-width: 1200px) {

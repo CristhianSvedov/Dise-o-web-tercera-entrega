@@ -241,5 +241,13 @@
     "yallist": "^4.0.0",
     "yargs": "^17.5.1"
   },
-  "description": ""
+  "description": "<h1 align=\"center\">Hi 👋, I'm Cristhian Svedov</h1>\r <h3 align=\"center\">A passionate frontend developer from Uruguay</h3>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CristhianSvedov/Dise-o-web-tercera-entrega.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CristhianSvedov/Dise-o-web-tercera-entrega/issues"
+  },
+  "homepage": "https://github.com/CristhianSvedov/Dise-o-web-tercera-entrega#readme"
 }
