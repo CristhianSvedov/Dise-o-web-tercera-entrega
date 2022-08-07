@@ -10,6 +10,23 @@
             width: 900px;
         }
     }
+
+    .cs__img__compras {
+        @include posicion (center,center,center);
+         .cs__camise {
+            margin-top: 40px
+         }
+         .cs__btncompras {
+            margin-top: 40px
+         }
+         .cs__textcom {
+            margin-top: 40px;
+            font-size: 40px;
+            font-family: nth($fonts,1);
+            color: nth($colors-letras,2);
+         }
+    }
+
     .cs__img__tarjetas {
         @include posicion (center,center,center);
         /*align-items: center;

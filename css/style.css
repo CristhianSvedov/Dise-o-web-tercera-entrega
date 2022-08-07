@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #f6bc48;
+  background: linear-gradient(80deg, #ecece0, #eea209);
 }
 
 .main h2 {
@@ -381,8 +381,7 @@ footer .box__copy hr {
   width: 100%;
   height: 100%;
   margin-top: 210px;
-  /*background-color: nth($colors-pages,2);*/
-  background: linear-gradient(80deg, #ecece0, #eea209);
+  margin-bottom: 100px;
 }
 .main h1 {
   padding: 20px;
@@ -460,6 +459,7 @@ footer .box__copy hr {
 .main .cs__video__noticia div video {
   align-items: center;
   height: 500px;
+  margin-top: 30px;
 }
 .main .cs__video__noticia h4 {
   font-size: 25px;
@@ -468,28 +468,161 @@ footer .box__copy hr {
   color: hsl(44deg, 42%, 26%);
 }
 
-.cs__usuario {
-  margin: 50px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  border-bottom: solid 2px hsl(28deg, 1%, 43%);
+.btncontainer {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  margin-top: 80px;
 }
-.cs__usuario div a img {
-  width: 300px;
-  border-radius: 15%;
+.btncontainer .contTres {
+  position: relative;
+  margin-top: 0px;
+  width: 800px;
+  height: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btncontainer .contTres h3 {
+  width: 200px;
+  text-align: center;
+  font-size: 13px;
+  margin-left: -55px;
+  font-weight: bold;
+  margin-top: 45px;
+  text-align: center;
+  color: white;
+}
+.btncontainer .contTres p {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  margin-left: -55px;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #8a8a8a;
+  letter-spacing: 1px;
+}
+.btncontainer .contTres:hover h4 {
+  color: black;
+}
+.btncontainer .contTres .tresUno {
+  display: inline-block;
+  width: 33.333%;
+  height: 100%;
+  background: #363636;
+  border-bottom: 15px solid #f5cb22;
+  text-align: center;
+  justify-content: center;
+  transition: all 0.25s;
+}
+.btncontainer .contTres .tresUno .circleborder {
+  position: absolute;
+  top: 30px;
+  width: 90px;
+  height: 90px;
+  background: #f5cb22;
+  margin-left: 88.33333px;
+  border-radius: 50%;
+}
+.btncontainer .contTres .tresUno .circlepic {
+  position: absolute;
+  top: -10px;
+  margin-top: 30px;
+  width: 110px;
+  height: 110px;
+  background: #5c5c5c;
+  margin-left: 78.33333px;
+  border-radius: 50%;
+}
+.btncontainer .contTres .tresUno:hover {
+  background: #f5cb22;
+}
+.btncontainer .contTres .tresUno:hover .circlepic {
+  background: #5c5c5c;
+}
+.btncontainer .contTres .tresUno:hover .circleborder {
+  background: #333333;
+}
+.btncontainer .contTres .tresUno:hover svg {
+  fill: #f5cb22;
+  transition: all 0.65s;
+  transform: rotateY(360deg);
+}
+.btncontainer .contTres .tresUno svg {
+  margin-top: 15px;
+  margin-left: 10px;
+}
+.btncontainer .contTres .tresDos {
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  background: #333333;
+  border-bottom: 15px solid #f5cb22;
+  transition: all 0.25s;
+}
+.btncontainer .contTres .tresTres {
+  display: inline-block;
+  width: 33.333333333%;
+  height: 100%;
+  background: #363636;
+  border-bottom: 15px solid #f5cb22;
+  transition: all 0.25s;
+}
+.btncontainer .contTres .tresTres .circleborder {
+  position: absolute;
+  top: 30px;
+  width: 90px;
+  height: 90px;
+  background: #f5cb22;
+  margin-left: 88.33333px;
+  border-radius: 50%;
+}
+.btncontainer .contTres .tresTres .circlepic {
+  position: absolute;
+  top: -10px;
+  margin-top: 30px;
+  width: 110px;
+  height: 110px;
+  background: #5c5c5c;
+  margin-left: 78.33333px;
+  border-radius: 50%;
+}
+.btncontainer .contTres .tresTres:hover {
+  background: #f5cb22;
+}
+.btncontainer .contTres .tresTres:hover .circlepic {
+  background: #5c5c5c;
+}
+.btncontainer .contTres .tresTres:hover .circleborder {
+  background: #333333;
+}
+.btncontainer .contTres .tresTres:hover svg {
+  fill: #f5cb22;
+  transition: all 0.65s;
+  transform: rotateY(360deg);
+}
+.btncontainer .contTres .tresTres svg {
+  margin-top: 15px;
+  margin-left: 20px;
 }
 
-.cs__form1 .cs__form2 {
-  align-items: center;
-  justify-items: center;
+.cs__form1 {
+  margin-top: 150px;
+  margin-right: 30px;
+  margin-left: 30px;
 }
-.cs__form1 .cs__form2 h3 {
-  font-size: 25px;
-  font-weight: 500;
-  font-family: "Bree Serif";
-  color: hsl(44deg, 42%, 26%);
-  text-align: center;
+.cs__form1 .cs__form2 .cs__boton {
+  margin-left: 80vh;
+  align-items: center;
+}
+
+.cs__form1 {
+  margin-top: 150px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+.cs__form1 button {
+  margin-left: 50vh;
+  align-items: center;
 }
 
 .cs__historia {
@@ -671,6 +804,23 @@ text-align:center;*/
   padding: 15px;
   border: solid 2px hsl(28deg, 1%, 43%);
   width: 900px;
+}
+.cs__tienda .cs__img__compras {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.cs__tienda .cs__img__compras .cs__camise {
+  margin-top: 40px;
+}
+.cs__tienda .cs__img__compras .cs__btncompras {
+  margin-top: 40px;
+}
+.cs__tienda .cs__img__compras .cs__textcom {
+  margin-top: 40px;
+  font-size: 40px;
+  font-family: "Bree Serif";
+  color: hsl(44deg, 42%, 26%);
 }
 .cs__tienda .cs__img__tarjetas {
   align-items: center;
