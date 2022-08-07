@@ -796,9 +796,7 @@ footer .box__copy hr {
 .cs__tienda .cs__img__equipaciones {
   align-items: center;
   justify-content: center;
-  text-align: center; /*align-items: center;
-justify-content: center;
-text-align:center;*/
+  text-align: center;
 }
 .cs__tienda .cs__img__equipaciones img {
   padding: 15px;
@@ -826,9 +824,6 @@ text-align:center;*/
   align-items: center;
   justify-content: center;
   text-align: center;
-  /*align-items: center;
-  justify-content: center;
-  text-align: center;*/
 }
 .cs__tienda .cs__img__tarjetas h3 {
   font-size: 25px;
